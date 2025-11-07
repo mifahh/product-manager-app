@@ -1,0 +1,18 @@
+{
+  "productData": [
+    {
+      "id": "1",
+      "nama": "Soto Betawi",
+      "kategori": "Makanan Utama",
+      "harga": 28000,
+      "stok": 9
+    },
+    {
+      "id": "2",
+      "nama": "Gado-Gado",
+      "kategori": "Salad",
+      "harga": 22000,
+      "stok": 8
+    }
+  ]
+}
