@@ -1,6 +1,6 @@
 # product-manager-app
 
-This template should help get you started developing with Vue 3 in Vite.
+Vue js Portofolio with Web Api for CRUD Product
 
 ## Recommended IDE Setup
 
