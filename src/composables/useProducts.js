@@ -24,7 +24,7 @@ const normalize = (s) => {
 async function getProducts(q){
   loading.value = true
   try{
-    const base = 'http://localhost:3000/productData'
+    const base = 'https://my-json-server.typicode.com/mifahh/product-manager-app/productData'
     // fetch full list then filter client-side for partial, case-insensitive matches
     const res = await axios.get(base)
     const all = Array.isArray(res.data) ? res.data : []

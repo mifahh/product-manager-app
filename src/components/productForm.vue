@@ -32,7 +32,7 @@ const add = async () => {
     if (!product.id) {
       product.id = String(await generateId())
     }
-    const res = await axios.post("http://localhost:3000/productData", product, {
+    const res = await axios.post("https://my-json-server.typicode.com/mifahh/product-manager-app/productData", product, {
       headers: { "Content-Type": "application/json" },
     })
   // json-server returns the created object (with id)
@@ -55,7 +55,7 @@ const add = async () => {
  */
 async function generateId(){
   try{
-    const res = await axios.get('http://localhost:3000/productData')
+    const res = await axios.get('https://my-json-server.typicode.com/mifahh/product-manager-app/productData')
     const list = Array.isArray(res.data) ? res.data : []
     // extract numeric ids
     const numericIds = list.map(p => Number(p.id)).filter(n => !Number.isNaN(n) && Number.isFinite(n))
@@ -74,7 +74,7 @@ const update = async () => {
   }
 
   try {
-    const res = await axios.put(`http://localhost:3000/productData/${product.id}`, product, {
+    const res = await axios.put(`https://my-json-server.typicode.com/mifahh/product-manager-app/productData/${product.id}`, product, {
       headers: { "Content-Type": "application/json" },
     })
     message.value = 'Produk berhasil diupdate.'

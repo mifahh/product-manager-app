@@ -13,7 +13,7 @@ async function Delete(productId) {
   }
 
   try {
-    await axios.delete(`http://localhost:3000/productData/${productId}`)
+    await axios.delete(`https://my-json-server.typicode.com/mifahh/product-manager-app/productData/${productId}`)
     message.value = 'Produk berhasil didelete.'
     // refresh list
     await getProducts()
